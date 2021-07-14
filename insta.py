@@ -81,7 +81,7 @@ def matzip_deep(driver, plusUrl = "홍대맛집"):
     for _ in range(len(imglist)):
         image_url = imglist[n]
         with urlopen(image_url) as f:
-            with open("./media/" + postlist[n][28:-1] + str(n) + ".jpg", "wb") as h:
+            with open("./media/" + postlist[n][28:-1] + ".jpg", "wb") as h:
                 img = f.read()
                 h.write(img)
         n += 1
