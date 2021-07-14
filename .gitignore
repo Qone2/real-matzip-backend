@@ -291,3 +291,6 @@ data/*.weights
 
 # chromedriver
 chromedriver*
+
+# 테스트용 파일
+test*
