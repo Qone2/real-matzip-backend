@@ -62,12 +62,14 @@ python save_model.py --weights ./data/custom.weights --output ./checkpoints/cust
 ```
 python manage.py migrate
 ```
+웹드라이버가 실행돼도 당황하지 말고 터미널에서 마이그레이트가 끝나면 웹드라이버를 닫아도 된다.
 
 ### Runserver
 서버를 실행한다.
 ```
 python manage.py runserver <port num(default:8000)>
 ```
+웹드라이버가 실행되면 닫지 말고 서버를 종료시킬 때까지 켜둔채로 유지한다.
 
 ## Spacific
 ### 기본 api
