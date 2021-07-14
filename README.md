@@ -85,7 +85,8 @@ http://localhost:8000/insta_deep/<해쉬태그검색어 (ex: 홍대맛집)>
 
 ### Image url
 api서버의 이미지url을 브라우저에서 여는건 가능하지만 스크립트에서 사용하면 CORS문제로 참조불가능 할것이다. 크롤링 작업과정에서 사진을 프로젝트의 media폴더에 저장하며, 
-http://localhost:8000/media/<파일명> 에서 CORS문제없이 열람가능하다.
+http://localhost:8000/media/<파일명.jpg> 에서 CORS문제없이 열람가능하다.  
+파일명은 포스트주소에서 마지막 랜덤값을 자른 것 이다.
 
 ### 검색기능
 api응답 내에서 keyword에 대하여 http://127.0.0.1:8000/matzip/?search=<검색어>
