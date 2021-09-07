@@ -30,7 +30,8 @@ def open_driver():
     driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input").send_keys(user_pw)
     driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]").click()
     driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div/div/button").click()
-    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div/div/div/div[3]/button[2]")))
+    # WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div/div/div/div[3]/button[2]")))
+    time.sleep(5)
     return driver
 
 def matzip_deep(driver, plusUrl = "홍대맛집"):
